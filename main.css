@@ -1,0 +1,104 @@
+:root {
+  --color-primary: rgb(25, 1, 36);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lugrasimo&family=Pacifico&family=Roboto:ital@1&display=swap");
+
+/* Estilos generales */
+.main__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilos para las secciones */
+.section__addmovie,
+.movies__saved,
+.movies__delete {
+  width: 80%; /* Ajusta el ancho de las secciones para pantallas pequeñas */
+  max-width: 400px; /* Establece un ancho máximo */
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los formularios y botones */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__title {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-family: "Indie Flower", cursive;
+}
+
+#addmovie,
+#delete__movie {
+  border: 1px solid #1c1c1d;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: green;
+  transform: scale(1.1);
+  box-shadow: 3px 4px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la lista de películas */
+#movies__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movies__list li {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+  background-color: transparent;
+  border: 1px solid #1c1c1d;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .section__addmovie,
+  .movies__saved,
+  .movies__delete {
+    width: 85%; /* Ajusta el ancho de las secciones para pantallas pequeñas */
+    max-width: none; /* Elimina el ancho máximo */
+  }
+
+  #addmovie,
+  #delete__movie {
+    width: 80%; /* Ajusta el ancho de los campos de entrada al 100% para pantallas pequeñas */
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <title>localStorage</title>
+  </head>
+  <body>
+    <!-- Agregar Película -->
+    <main class="main__layout">
+      <section class="section__addmovie">
+        <div class="main__section">
+          <h1 class="main__title">SAVE YOUR MOVIE</h1>
+          <form id="form__movies">
+            <input
+              type="text"
+              placeholder="Ingresa el título de la película"
+              id="addmovie"
+            />
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </section>
+      <!-- Películas Guardadas -->
+      <section class="movies__saved">
+        <h2 class="main__title">TUS PELÍCULAS GUARDADAS</h2>
+        <ul id="movies__list"></ul>
+      </section>
+      <!-- Borrar Película -->
+      <section class="movies__delete">
+        <h2 class="main__title">DELETE MOVIE</h2>
+        <form id="form__delete-movie">
+          <input
+            type="text"
+            placeholder="Ingresa el título de la película a borrar"
+            id="delete__movie"
+          />
+          <button type="submit">Delete</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
