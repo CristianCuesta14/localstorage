@@ -47,6 +47,12 @@ form {
   font-size: 22px;
   font-family: "Indie Flower", cursive;
 }
+.tittle {
+  color: var(--color-primary);
+  font-size: 25px;
+  font-family: "Indie Flower", cursive;
+  color: chocolate;
+}
 
 #addmovie,
 #delete__movie {
